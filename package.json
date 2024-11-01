@@ -1,7 +1,7 @@
 {
   "name": "myproject",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -30,7 +30,7 @@
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "eslint.config.js",
-  "keywords": [],
+  "keywords": ["react", "vite", "spa"],
   "author": "",
   "license": "ISC"
 }
