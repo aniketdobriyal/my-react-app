@@ -1,0 +1,23 @@
+.notfound{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 15px;
+}
+
+.notfound h1{
+    font-size:100px;
+    line-height:100px;
+    
+}
+
+.notfound h2{
+    font-size:40px;
+    line-height:60px;
+}
+

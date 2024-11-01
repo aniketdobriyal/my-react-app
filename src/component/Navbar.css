@@ -1,0 +1,144 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  z-index: 100;
+}
+
+/* Logo styling */
+.navbar-logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Navigation links container */
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display links horizontally */
+  gap: 20px;
+}
+
+/* Each navigation link item */
+.navbar-links li {
+  position: relative; /* Required for dropdown positioning */
+}
+
+/* Link styling */
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  display: block; /* Full width for the links */
+}
+
+/* Hover effect for top-level links */
+.navbar-links a:hover {
+  color: #f0a500;
+  
+    background-color: #555;
+   
+}
+
+/* Dropdown menu (hidden by default) */
+.navbar-links ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the parent li */
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #444;
+  min-width: 150px; /* Ensure it has a proper width */
+}
+
+/* Dropdown links */
+.navbar-links ul li {
+  display: block; /* Stack dropdown items vertically */
+}
+
+.navbar-links ul li a {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  background-color: #444;
+}
+
+/* Hover effect for dropdown links */
+.navbar-links ul li a:hover {
+  background-color: #555;
+  color: #f0a500;
+}
+
+/* Show dropdown menu on hover */
+.navbar-links li:hover > ul {
+  display: block;
+}
+
+/* Styles for first-level ul (dropdown) */
+.navbar-links ul {
+  display: none; /* Hidden by default */
+  position: absolute;
+  left: -60;
+  background-color: #444;
+  min-width: 150px;
+  z-index: 1000;
+
+}
+
+.navbar-links ul li {
+  display: block;
+  position: relative; /* To allow submenus within this item */
+}
+
+.navbar-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  padding: 10px 15px;
+}
+
+.navbar-links ul li a:hover {
+  background-color: #555;
+  color: #f0a500;
+}
+
+/* Show the first-level ul when hovering over the first-level li */
+.navbar-links li:hover > ul {
+  display: block;
+}
+
+/* Position second-level ul (dropdown) */
+.navbar-links ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1050px; /* Align second-level dropdown to the left side of its parent */
+  background-color: #444;
+  min-width: 150px;
+  z-index: 1001;
+}
+
+/* Show second-level ul on hover of first-level ul li */
+.navbar-links ul li:hover > ul {
+  display: block;
+}
+
+.cons_posi{
+  margin-right: 10px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 450px) {
+  .navbar {
+    display: none;
+  }
+}
