@@ -12,7 +12,7 @@ function Homepage() {
   const { user, setUser } = useUser(); // Access user context
   return (
     <div className="homepage"> 
-      <Popup/>
+     
       <Navbar/>
       <Sidebar/>
       <main>
